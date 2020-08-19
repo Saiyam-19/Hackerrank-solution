@@ -1,0 +1,28 @@
+import java.util.*;
+import java.io.*;
+class Solution
+{
+int simplearray(int [] s,int l)
+{
+int s1=0;
+for(int j=0;j<l;j++)
+{
+s1=s1+s[j];
+}
+System.out.println(s1);
+return 0;
+}
+public static void main(String args[])
+{
+int n;
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+int []a=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=sc.nextInt();
+}
+Solution s=new Solution();
+s.simplearray(a,n);
+}
+}
