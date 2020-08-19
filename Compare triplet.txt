@@ -1,0 +1,41 @@
+import java.util.*;
+import java.io.*;
+class Solution
+{
+ int compare(int []e,int [] f)
+{
+int c=0,d=0,g=0,h=0;
+for(int k=0;k<=2;k++)
+{
+if(e[k]>f[k])
+{c++;}
+else if (e[k]<f[k])
+{
+d++;}
+else
+{
+continue;}
+}
+System.out.print(c);
+System.out.print(" ");
+System.out.println(d);
+return 0;
+
+}
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+int a[]=new int[3];
+int b[]=new int[3];
+for(int i=0;i<=2;i++)
+{
+a[i]=sc.nextInt();
+}
+for(int j=0;j<=2;j++)
+{
+b[j]=sc.nextInt();
+}
+Solution n= new Solution();
+n.compare(a,b);
+}
+}
